@@ -1,0 +1,20 @@
+{
+    "name":"Utrust CFML",
+    "version":"1.0.0",
+    "author":"Gary Stanton",
+    "location":"GaryStanton/UtrustCFML#v1.0.0",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/GaryStanton/UtrustCFML"
+    },
+    "bugs":"https://github.com/GaryStanton/UtrustCFML/issues",
+    "slug":"UtrustCFML",
+    "shortDescription":"This module provides a wrapper for the Utrust Crypto Payments API",
+    "type":"modules",
+    "keywords":"Utrust Payments Bitcoin Ethereum",
+    "scripts":{
+        "postVersion":"package set location='GaryStanton/UtrustCFML#v`package version`'",
+        "onRelease":"publish",
+        "postPublish":"!git push --follow-tags"
+    }
+}
