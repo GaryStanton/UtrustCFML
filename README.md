@@ -1,7 +1,7 @@
 # Utrust CFML
 
-Utrust CFML provides a wrapper for the Utrust crypto payments API.
-Obtain an API key from https://utrust.com/.
+Utrust CFML provides a wrapper for the Utrust crypto payments API.  
+Obtain an API key from https://utrust.com/.  
 Check out the Utrust API documentation here: https://docs.api.utrust.com/.
 
 ## Installation
@@ -22,7 +22,7 @@ The wrapper may be used standalone, or as a ColdBox module.
 ### Standalone
 ```cfc
 utrustStores = new models.stores(
-		apiKey = encodeForHTML('UTRUST_KEY')
+	apiKey = 'UTRUST_KEY'
 );
 ```
 
@@ -62,13 +62,13 @@ orderData = {
 	},
 	'line_items' : [
 		{
-        'sku' : 'ACF2018',
-        'name' : 'Adobe ColdFusion 2018',
-        'price' : '2172.00',
-        'currency' : 'GBP',
-        'quantity' : 1,
-    	}
-    ]
+			'sku' : 'ACF2018',
+			'name' : 'Adobe ColdFusion 2018',
+			'price' : '2172.00',
+			'currency' : 'GBP',
+			'quantity' : 1
+		}
+	]
 };
 
 customerData = {
@@ -79,7 +79,7 @@ customerData = {
 }
 
 orderResponse = utrust.createOrder(
-		orderData 		= orderData
+		orderData 	= orderData
 	,	customerData 	= customerData
 );
 
@@ -101,7 +101,7 @@ You can use the webhook object to confirm the signature and read the data.
 ```cfc
 utrustWebhook = new models.webhook(
 		webhookSecret 	= 'WEBHOOK_SECRET'
-	,	payload 		= ToString(getHTTPRequestData().content)
+	,	payload 	= ToString(getHTTPRequestData().content)
 );
 ```
 
@@ -116,5 +116,5 @@ utrustWebhook.validateSignature();
 ```
 
 ## Author
-Written by Gary Stanton.
+Written by Gary Stanton.  
 https://garystanton.co.uk
