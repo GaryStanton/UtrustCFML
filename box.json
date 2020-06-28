@@ -1,8 +1,8 @@
 {
     "name":"Utrust CFML",
-    "version":"1.0.0",
+    "version":"1.0.1",
     "author":"Gary Stanton",
-    "location":"GaryStanton/UtrustCFML#v1.0.0",
+    "location":"GaryStanton/UtrustCFML#v1.0.1",
     "repository":{
         "type":"git",
         "URL":"https://github.com/GaryStanton/UtrustCFML"
