@@ -20,7 +20,7 @@ component {
 
 			this.title 				= moduleInfo.name;
 			this.author 			= moduleInfo.author;
-			this.webURL 			= moduleInfo.homepage;
+			this.webURL 			= moduleInfo.repository.URL;
 			this.description 		= moduleInfo.shortDescription;
 			this.version			= moduleInfo.version;
 
