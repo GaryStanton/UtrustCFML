@@ -38,8 +38,10 @@ property name="utrust" inject="stores@UtrustCFML";
 When using with ColdBox, you'll want to insert your API key into your module settings:
 
 ```cfc
-opencage = {
-    apiKey = getSystemSetting("UTRUST_KEY", "")
+utrustCFML = {
+		apiKey = getSystemSetting("UTRUST_KEY", "")
+	,	webhookSecret = getSystemSetting("UTRUST_WEBHOOK", "")
+	,	environment = 'sandbox'
 }
 ```
 
